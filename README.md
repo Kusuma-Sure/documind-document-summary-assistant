@@ -1,31 +1,45 @@
 # 📄 DocuMind
 
-## Intelligent Document Summary & Q&A Assistant
+DocuMind is an AI-powered document summary and question-answering assistant. It supports PDF and image uploads, OCR, intelligent summarization, key-point extraction, semantic search, and RAG-based question answering with relevant page citations. The application uses Streamlit, Ollama, Llama 3.2, embeddings, and FAISS.
 
-DocuMind is an AI-powered document intelligence application that allows users to upload PDF or image documents, generate summaries and key points, and ask questions about their documents using Retrieval-Augmented Generation (RAG).
+## ▶️ How to Run
 
-## Features
+### 1. Clone the repository
 
-- PDF and image document upload
-- OCR-based text extraction
-- Text cleaning and preprocessing
-- Short, Medium, and Long summaries
-- Automatic key-point extraction
-- Document statistics
-- Semantic search using embeddings
-- FAISS vector search
-- RAG-based question answering
-- Page-level source citations
-- Page-wise chunk information
-- Downloadable summaries
+```bash
+git clone https://github.com/Kusuma-Sure/documind-document-summary-assistant.git
+cd documind-document-summary-assistant
+```
 
-## Technology Stack
+### 2. Create and activate virtual environment
 
-- Python
-- Streamlit
-- Ollama
-- Llama 3.2
-- FAISS
-- Embeddings
-- OCR
-- PyPDF / PDF processing
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Install and start Ollama
+
+Install Ollama from:
+
+https://ollama.com/
+
+Then download the required model:
+
+```bash
+ollama pull llama3.2
+```
+
+### 5. Run DocuMind
+
+```bash
+streamlit run app.py
+```
+
+Open the local URL shown by Streamlit in your browser.
